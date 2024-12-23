@@ -1,0 +1,184 @@
+/* Corpo da página com flexbox */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* Garante que a altura da página ocupe a tela inteira */
+    flex: 1;
+    margin: 0;
+}
+
+/* Estilo para o item ativo na navbar */
+.active {
+    background-color: #393939;
+    border-radius: 7px;
+    color: #f8f8ec !important;
+    padding: 5px;
+}
+
+/* Estilos para a navbar */
+nav {
+    background-color: #616161;
+    border-radius: 0px 0px 20px 20px;
+    height: 70px; /* Altura inicial */
+    transition: height 0.5s ease, background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adiciona um pouco de espaçamento nas laterais */
+}
+
+nav img {
+    width: 80px;
+    margin-right: 20px;
+}
+
+nav:hover {
+    height: 100px; /* Altura ao passar o mouse */
+}
+
+
+
+/* Seção de texto */
+.string {
+    margin-top: 100px;
+    text-align: center;
+    background-color: #262626;
+    color: #f8f8ec;
+    margin-left: 90px;
+    margin-right: 90px;
+    border-radius: 10px 10px 0px 0px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    transition: transform 0.5s ease, background-color 0.3s ease;
+}
+
+.string:hover {
+    transform: scale(1.05); /* Aumenta 5% no hover */
+}
+
+/* Estilo do footer */
+footer {
+    background-color: #616161;
+    border-radius: 20px 20px 0px 0px;
+    height: 70px; /* Altura inicial */
+    transition: height 0.5s ease, transform 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: auto; /* Garante que o footer fique no final da página */
+    width: 100%; /* Certifica-se que o footer ocupa toda a largura */
+}
+
+footer:hover {
+    height: 100px;
+    transform: translateY(-30px);
+}
+
+footer img {
+    height: 60px;
+    width: 100px;
+    margin-top: 5px; /* Margem superior */
+}
+
+.footerText {
+    margin-top: 5px; /* Margem superior */
+}
+
+/* Estilo para os ícones no footer */
+.icons {
+    display: flex; /* Organiza os itens em linha */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    margin-top: 5px; /* Margem superior */
+    gap: 20px; /* Espaço entre os ícones */
+}
+
+/* =========================================================================================================================================== */
+
+/* Responsividade para telas pequenas */
+@media (max-width: 767px) {
+    /* Ajuste a navbar para dispositivos pequenos */
+    nav {
+        height: 60px;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 15px; /* Ajuste no padding */
+    }
+
+    nav img {
+        height: 30px;
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    /* Navbar */
+    .navbar-nav {
+        text-align: center; /* Centraliza os itens */
+        width: 100%; /* Garantir que ocupe toda a largura */
+    }
+
+    .navbar-toggler {
+        margin-right: 10px;
+    }
+
+    /* Ícones do footer em telas pequenas */
+    .icons {
+        gap: 15px; /* Menor espaço entre os ícones */
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .footerText {
+        font-size: 14px; /* Fonte um pouco menor em telas pequenas */
+    }
+    
+}
+
+/* =========================================================================================================================================== */
+
+/* Ajustes para telas médias */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-nav {
+        font-size: 16px; /* Tamanho da fonte um pouco menor para telas médias */
+    }
+
+    .icons {
+        gap: 20px; /* Espaço normal entre ícones */
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around; /* Distribui os itens */
+        padding: 20px;
+    }
+
+    .footerText {
+        font-size: 16px; /* Ajuste de fonte para telas médias */
+    }
+}
+
+/* =========================================================================================================================================== */
+
+/* Ajustes para telas grandes */
+@media (min-width: 992px) {
+    nav {
+        padding: 0 30px; /* Mais espaçamento nas laterais */
+    }
+
+    .navbar-nav {
+        font-size: 18px; /* Tamanho de fonte maior para telas grandes */
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between; /* Distribui os itens */
+        padding: 30px;
+    }
+
+    .footerText {
+        font-size: 18px; /* Ajuste de fonte para telas grandes */
+    }
+}
