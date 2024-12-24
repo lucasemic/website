@@ -8,7 +8,7 @@ body {
 }
 
 /* Estilo para o item ativo na navbar */
-.active {
+.activee {
     background-color: #393939;
     border-radius: 7px;
     color: #f8f8ec !important;
