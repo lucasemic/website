@@ -88,15 +88,43 @@
     transform: scale(1.1);  /* Aumenta 10% do tamanho original */
 }
 
+/* Remova o fundo do SVG, caso ele sobreponha o gradiente */
+.contentCarousel rect {
+    display: none;
+}
+
 .contentCarousel {
     width: 100%;
     height: 400px;
-   
+    background: linear-gradient(to right, #ffffff, #b8b4b4, #ffffff) !important;
     margin-top: 80px;
 }
 
+.carousel-caption img{
+    width: 300px;
+    height: 330px;
+}
 
+.contentCarouselText{
+    margin-top: 70px;
+}
 
+.contentPremium{
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.contentPremium img{
+    margin-top: 30px;
+}
+
+.contentPremiumText{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 .partners{
     margin-top: 120px;
@@ -161,7 +189,7 @@
 
     .contentMasterImg img{
         width: 450px;
-        margin-left: 40px;
+        margin-left: 10px;
     }
     
     .contentMasterText{
@@ -176,6 +204,25 @@
         width: 100%;
         height: 700px;
         text-align: center;
+    }
+
+    .carousel-caption img{
+        width: 100px;
+        height: 130px;
+        margin-top: 140px;
+    }
+    
+    .contentCarouselText{
+        margin-top: 10px;
+        font-size: small;
+    }
+
+    .contentPremium{
+        width: 100%;
+        height: 400px;
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 900px;
     }
 
 }
@@ -247,5 +294,16 @@
 
     .contentCenterDiv{
         margin-bottom: 40px;
+    }
+    
+    .carousel-caption img{
+        width: 180px;
+        height: 210px;
+        margin-top: 100px;
+    }
+    
+    .contentCarouselText{
+        margin-top: 60px;
+        font-size: small;
     }
 }

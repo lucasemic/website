@@ -1,0 +1,116 @@
+.contentStart{
+    margin-top: 50px;
+}
+
+.contentStartTitle{
+    text-align: center;
+    margin-top: 6%;
+}
+
+.contentHidden{
+    margin-top: 50px;
+    background-color: #616161;
+    border-radius: 10px;
+    height: 40px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.7);
+    transition: height 0.5s ease, background-color 0.5s ease;
+}
+
+.contentHiddenTitle{
+    margin-left: 10px;
+}
+
+.contentHiddenText{
+    margin-left: 10px;
+    color: transparent;
+}
+
+.contentHidden:hover {
+    height: 150px; /* Aumenta a altura da div */
+    background-color: #515151; /* Altere a cor do fundo, se desejar */
+}
+
+.contentHidden:hover .contentHiddenText {
+    color: #fff; /* Texto aparece */
+    transition: color 0.5s ease; /* Transição suave */
+}
+
+.contentMaster{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contentMasterImg img{
+    margin-top: 30px;
+    width: 400px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.contentMasterText{
+    margin-top: 30px;
+    text-align: left;
+}
+
+.contentCenter{
+    margin-top: 50px;
+}
+
+.contentCenterText{
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    width: 45%;
+    height: 100%;
+    margin-left: 34px;
+}
+
+@media (max-width: 767px) {
+    .contentStart{
+        text-align: justify;
+    }
+
+    .contentHidden{
+        margin-top: 50px;
+        background-color: #616161;
+        border-radius: 10px;
+        height: 70px;
+        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.7);
+        transition: height 0.5s ease, background-color 0.5s ease;
+    }
+    
+    .contentHidden:hover {
+        height: 290px; /* Aumenta a altura da div */
+        background-color: #515151; /* Altere a cor do fundo, se desejar */
+    }
+
+    .contentMasterText{
+        text-align: justify;
+    }
+
+    .contentCenterText{
+        width: 100%;
+        height: 100%;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .contentStartTitle{
+        margin-top: 100px;
+    }
+
+    .contentHidden{
+        margin-top: 50px;
+        background-color: #616161;
+        border-radius: 10px;
+        height: 70px;
+        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.7);
+        transition: height 0.5s ease, background-color 0.5s ease;
+    }
+    
+    .contentHidden:hover {
+        height: 240px; /* Aumenta a altura da div */
+        background-color: #515151; /* Altere a cor do fundo, se desejar */
+    }
+}
