@@ -26,13 +26,13 @@
 }
 
 .contentHidden:hover {
-    height: 150px; /* Aumenta a altura da div */
-    background-color: #515151; /* Altere a cor do fundo, se desejar */
+    height: 150px; 
+    background-color: #515151; 
 }
 
 .contentHidden:hover .contentHiddenText {
-    color: #fff; /* Texto aparece */
-    transition: color 0.5s ease; /* Transição suave */
+    color: #fff; 
+    transition: color 0.5s ease; 
 }
 
 .contentMaster{
@@ -53,7 +53,7 @@
 }
 
 .contentCenter{
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .contentCenterText{
@@ -63,6 +63,83 @@
     height: 100%;
     margin-left: 34px;
 }
+
+.contentCarousel rect {
+    display: none;
+}
+
+.carousel h1{
+    text-align: center;
+    margin-top: 130px;
+}
+
+.contentCarousel {
+    width: 100%;
+    height: 400px;
+    background: transparent !important;
+}
+
+.contentCarouselLine{
+    color: black;
+    margin-left: -180px;
+}
+
+.contentCarouselText{
+    margin-bottom: 100px;
+    color: black;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.colorIconCorousel{
+    background-color: #515151;
+    border-radius: 10px;
+}
+
+.contentCarouselDate{
+    background-color: #515151;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    margin-left: 260px;
+    margin-right: 260px;
+}
+
+.contentEnd{
+    display: flex; /* Habilita o Flexbox */
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    flex-wrap: wrap; /* Permite quebra para próximas linhas, se necessário */
+}
+
+.contentEndImg{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    width: 200px;
+    background-color: #515151;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    transition: height 0.5s ease, background-color 0.5s ease;
+    display: block;
+    color: transparent;
+}
+
+.contentEndImg:hover{
+    height: 380px; 
+    background-color: #515151; 
+    color: #fff;
+}
+
+.contentEndImg img{
+    border-radius: 12px;
+    margin-top: 20px;
+    height: 100px;
+    width: 100%;
+}
+
+
 
 @media (max-width: 767px) {
     .contentStart{
@@ -93,6 +170,37 @@
         margin-top: 15px;
         margin-left: 0px;
     }
+
+    .contentCarousel {
+        width: 100%;
+        height: 500px;
+        background: transparent !important;
+    }
+    
+    .contentCarouselLine{
+        color: black;
+        margin-left: -180px;
+    }
+    
+    .contentCarouselText{
+        text-align: center;
+        color: black;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .contentCarouselDate{
+        background-color: #515151;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .contentEnd{
+        margin-left: 20px;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -113,4 +221,31 @@
         height: 240px; /* Aumenta a altura da div */
         background-color: #515151; /* Altere a cor do fundo, se desejar */
     }
+
+    .contentCarousel {
+        width: 100%;
+        height: 500px;
+        background: transparent !important;
+    }
+    
+    .contentCarouselLine{
+        color: black;
+        margin-left: -180px;
+    }
+    
+    .contentCarouselText{
+        text-align: center;
+        color: black;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .contentCarouselDate{
+        background-color: #515151;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
 }
