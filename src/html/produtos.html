@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
     <!-- CSS personalizado -->
-    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/produtos.css">
     <link rel="stylesheet" href="../style/general.css">
     <!-- Popper.js -->
     <script src="../../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
@@ -39,13 +39,64 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="quemSomos.html" class="nav-link">Quem Somos</a></li>
-                        <li class="nav-item"><a href="produtos.html" class="nav-link  active">Produtos</a></li>
+                        <li class="nav-item"><a href="produtos.html" class="nav-link  activee">Produtos</a></li>
                         <li class="nav-item"><a href="noticias.html" class="nav-link">Notícias</a></li>
                         <li class="nav-item"><a href="historia.html" class="nav-link">História</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <div class="contentStart">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contentStartTitle">
+                        <h1>Lorem Ipsum</h1>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contentStartText">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem pariatur ex veniam,
+                        consequuntur consequatur,
+                        cumque architecto ratione enim reprehenderit temporibus iure cum quod at aut voluptatibus a fuga
+                        nobis nostrum.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="product-carousel" class="carousel">
+            <!-- Produtos serão adicionados aqui dinamicamente -->
+        </div>
+
+        <div class="filter-container">
+            <h2 class="filter-title">Filtros</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn" id="filter-all" onclick="fetchProducts()">limpar</button>
+                <button class="filter-btn" id="filter-category1" onclick="fetchProductsBy('categoria1')">Categoria 1</button>
+                <button class="filter-btn" id="filter-category2">Categoria 2</button>
+                <button class="filter-btn" id="filter-category3">Categoria 3</button>
+                <button class="filter-btn" id="filter-category4">Categoria 4</button>
+                  <!-- tem que limpar as divs para adicionar os com filtros -->
+                <button class="filter-btn" id="filter-category5">Categoria 5</button>
+                <button class="filter-btn" id="filter-category6">Categoria 6</button>
+                <button class="filter-btn" id="filter-category7">Categoria 7</button>
+            </div>
+
+          
+        </div>
+        
+        <div id="product-list" class="product-list">
+            <!-- Produtos serão adicionados aqui dinamicamente -->
+        </div>
+
+        <!-- produtos -->
+        <div id="product-grid" class="product-grid">
+            <!-- Produtos serão adicionados aqui dinamicamente -->
+        </div>
+        
+        <!-- ============================================================================================================= -->
+
         <!-- Citação -->
         <div class="string">
             <span>"Lorem ipsum dolor sit amet consectetur adipisicing elit. In nam velit atque."</span>
@@ -79,5 +130,8 @@
     </div>
 
 </body>
+<script src="../javascript/addProduct.js"></script>
+<script src="../javascript/fetchProducts.js"></script>
+<script src="../javascript/fetchProductsBy.js"></script>
 
 </html>

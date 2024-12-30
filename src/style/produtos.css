@@ -1,0 +1,196 @@
+.contentStart{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.contentStartTitle{
+    text-align: center;
+    margin-top: 8%;
+}
+
+.contentStartText{
+    text-align: center;
+    margin-top: 6%;
+}
+
+/* Contêiner geral dos filtros */
+.filter-container {
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* Título dos filtros */
+.filter-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Alinhar os botões horizontalmente */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+/* Estilo dos botões */
+.filter-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #616161;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.filter-btn:hover {
+    background-color: #333;
+}
+
+.filter-btn:active {
+    background-color: #333;
+}
+
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que os produtos quebrem para a linha seguinte */
+    gap: 20px;  /* Espaçamento entre os produtos */
+    justify-content: space-between;  /* Garantir que os produtos tenham o máximo de espaçamento possível */
+    padding: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 20px); /* Tamanho padrão para 3 colunas (ajustado por gap) */
+    box-sizing: border-box;  /* Para garantir que o padding e o gap sejam considerados */
+    display: flex;
+    flex-direction: column;  /* Coloca o conteúdo do produto em uma coluna */
+    justify-content: space-between;  /* Garante que o botão fique no fundo */
+    height: 500px;  /* Definindo uma altura fixa para os produtos */
+}
+
+/* Ajuste da imagem */
+.product-img {
+    width: 100%;
+    height: 200px;  /* Definindo uma altura para a imagem */
+    object-fit: cover;  /* Garantir que a imagem ocupe o espaço sem distorcer */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Ajuste do título */
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+    
+}
+
+/* Ajuste da descrição para caber na div */
+.product-description {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+    line-height: 1.5;
+    overflow: hidden;
+    height: 60px;  /* Limita a altura da descrição */
+    text-overflow: ellipsis;
+}
+
+/* Botão de compra */
+.product-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;  /* Coloca o botão no fundo da div */
+}
+
+.product-button:hover {
+    background-color: #0056b3;
+}
+/* layout 1*/
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* layout 2*/
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    flex: 0 0 300px;
+    scroll-snap-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* layout 3*/
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product:hover {
+    transform: translateX(10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
