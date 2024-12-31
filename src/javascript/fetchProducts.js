@@ -1,6 +1,13 @@
 // Função para buscar produtos da API
 async function fetchProducts() {
-    alert("oifhdgoih")
+
+    const productList = document.getElementById('product-list');
+    productList.innerHTML = '';
+    const productGrid = document.getElementById('product-grid');
+    productGrid.innerHTML = '';
+    const filterTitle = document.getElementById('filterTitle');
+    filterTitle.innerHTML = 'Todos'
+
     try {
         // Simulação de API
         const response = await fetch(`https://fakestoreapi.com/products`);

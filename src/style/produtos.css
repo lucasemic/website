@@ -31,6 +31,7 @@
     display: flex;
     justify-content: center;
     gap: 10px; /* Espaçamento entre os botões */
+    flex-wrap: wrap;
 }
 
 /* Estilo dos botões */
@@ -43,6 +44,9 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    flex: 1 1 auto; /* Permite ajuste dinâmico de tamanho */
+    max-width: 150px; /* Define um limite de largura */
+    text-align: center;
 }
 
 /* Efeito ao passar o mouse sobre o botão */
@@ -50,9 +54,30 @@
     background-color: #333;
 }
 
-.filter-btn:active {
-    background-color: #333;
+@media (max-width: 768px) {
+    .filter-title {
+        font-size: 20px;
+    }
+
+    .filter-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        max-width: 120px;
+    }
 }
+
+@media (max-width: 480px) {
+    .filter-title {
+        font-size: 18px;
+    }
+
+    .filter-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+        max-width: 100px;
+    }
+}
+
 
 
 .product-container {
@@ -129,6 +154,7 @@
     padding: 20px;
 }
 
+
 .product {
     width: 100%;
     padding: 20px;
@@ -188,9 +214,4 @@
     width: 100px;
     height: auto;
     border-radius: 10px;
-}
-
-.product:hover {
-    transform: translateX(10px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }

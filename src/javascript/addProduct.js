@@ -1,8 +1,8 @@
 // Definindo limites para cada layout
 const layoutLimits = {
-    'product-carousel': { min: 6, max: 10 },
-    'product-list': { min: 3, max: 4 },
-    'product-grid': { min: 4, max: 50 }
+    'product-carousel': { min: 10, max: 10 },
+    'product-list': { min: 2, max: Infinity },
+    'product-grid': { min: 4, max: Infinity }
 };
 
 // Contador de produtos por layout
@@ -15,7 +15,6 @@ const layoutProductCount = {
 
 // Função para adicionar produtos dinamicamente
 function addProduct(imageUrl, title, description) {
-    alert("pppppppppppppppppppppppppppp")
     // Encontrando o layout com menos produtos
     let layoutName = getLayoutWithLeastProducts();
 
