@@ -6,6 +6,8 @@ async function fetchProductsBy(filter) {
     productGrid.innerHTML = '';
     const filterTitle = document.getElementById('filterTitle');
     filterTitle.innerHTML = filter
+    //zerando contagem de layouts usados com filtros 
+    zerarFiltros()
     
     try {
         // Simulação de API
@@ -14,7 +16,7 @@ async function fetchProductsBy(filter) {
 
         // Adiciona os produtos retornados pela API
         products.forEach(product => {
-            addProduct(product.image, product.title, product.description);
+            addProduct(product.image, product.title, product.description,  product.id);
         });
     } catch (error) {
         console.error('Erro ao buscar produtos:', error);

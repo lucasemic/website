@@ -1,8 +1,8 @@
 // Definindo limites para cada layout
 const layoutLimits = {
     'product-carousel': { min: 10, max: 10 },
-    'product-list': { min: 2, max: Infinity },
-    'product-grid': { min: 4, max: Infinity }
+    'product-list': { min: 2, max: 5 },
+    'product-grid': { min: 4, max: 12 }
 };
 
 // Contador de produtos por layout
@@ -12,9 +12,9 @@ const layoutProductCount = {
     'product-grid': 0
 };
 
-
 // Função para adicionar produtos dinamicamente
-function addProduct(imageUrl, title, description) {
+function addProduct(imageUrl, title, description, productId) {
+
     // Encontrando o layout com menos produtos
     let layoutName = getLayoutWithLeastProducts();
 
@@ -49,7 +49,14 @@ function addProduct(imageUrl, title, description) {
         const productButton = document.createElement('button');
         productButton.textContent = 'Ver Produto';
         productButton.classList.add('product-button');
+
+        // Redireciona para a página de detalhes ao clicar
+        productButton.addEventListener('click', () => {
+            // Use um identificador único (como productId) no URL
+            window.location.href = `productDetails.html?id=${productId}`;
+        });
         productDiv.appendChild(productButton);
+
 
         // Adicionando o produto ao container
         productContainer.appendChild(productDiv);
@@ -76,5 +83,12 @@ function getLayoutWithLeastProducts() {
     }
 
     return layoutWithLeastProducts;
+}
+
+function zerarFiltros() {
+    layoutProductCount['product-list'] = 0;
+    layoutProductCount['product-grid'] = 0;
+
+    return
 }
 

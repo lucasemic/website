@@ -1,3 +1,48 @@
+/* Estilo da barra de pesquisa */
+.search-container {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:   #262626;
+    padding: 10px;
+    margin-left: 90px;
+    margin-right: 90px;
+    border-radius: 10px 10px 10px 10px;
+    transition: transform 0.5s ease, background-color 0.3s ease;
+}
+
+.search-container:hover {
+    transform: scale(1.05); /* Aumenta 5% no hover */
+}
+
+.search-input {
+    width: 70%; /* Ocupa 70% da largura do container */
+    max-width: 800px; /* Limite máximo de largura */
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #616161;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+
 .contentStart{
     margin-top: 50px;
     margin-bottom: 100px;
