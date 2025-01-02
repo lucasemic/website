@@ -9,6 +9,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 50%;
+    display: flex;
 }
 
 .product-title {
@@ -30,6 +31,7 @@
 .product-description {
     font-size: 1.2em;
     color: #555;
+    margin-bottom: 200px;
 }
 
 .product-price {
@@ -58,4 +60,24 @@
 
 .back-button:hover {
     background-color: #0056b3;
+}
+
+/* layout 2*/
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    flex: 0 0 300px;
+    scroll-snap-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
