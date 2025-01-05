@@ -25,18 +25,26 @@ function addNews(imageUrl, title, description, newsId) {
             return;
         }
 
-        // Cria o container do item do carrossel
+        // Obtém ou cria a `carousel-inner` dentro do carrossel
         let newsContainer;
         if (layoutName === 'news-carousel') {
+            let carouselInner = newsLayout.querySelector('.carousel-inner');
+            if (!carouselInner) {
+                carouselInner = document.createElement('div');
+                carouselInner.classList.add('carousel-inner');
+                newsLayout.appendChild(carouselInner);
+            }
+
+            // Cria o container do item do carrossel
             newsContainer = document.createElement('div');
             newsContainer.classList.add('carousel-item');
 
             // Verifica se é o primeiro item (adiciona a classe 'active')
-            if (newsLayout.querySelectorAll('.carousel-item').length === 0) {
+            if (carouselInner.querySelectorAll('.carousel-item').length === 0) {
                 newsContainer.classList.add('active');
             }
 
-            newsLayout.appendChild(newsContainer);
+            carouselInner.appendChild(newsContainer);
         } else {
             newsContainer = newsLayout;
         }
@@ -82,6 +90,7 @@ function addNews(imageUrl, title, description, newsId) {
         console.log(`Layout ${layoutName} atingiu o número máximo de notícias.`);
     }
 }
+
 
 
 // Função para encontrar o layout com menos produtos
