@@ -20,32 +20,38 @@
 
 <body class="d-flex flex-column min-vh-100">
 
-    <div class="container">
+    <div id="loader">
+        <!-- Conteúdo do loader -->
+        <div class="spinner"></div>
+        <p>Carregando...</p>
+    </div>
 
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <!-- Logotipo -->
-                <a href="/" class="navbar-brand d-flex align-items-center">
-                    <img src="../complements/img/logotipo.png" alt="Logo" class="img-fluid" style="max-height: 40px;">
-                </a>
-                <!-- Botão do menu para telas pequenas -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Itens da navbar -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a href="index.html" class="nav-link activee">Home</a></li>
-                        <li class="nav-item"><a href="quemSomos.html" class="nav-link">Quem Somos</a></li>
-                        <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
-                        <li class="nav-item"><a href="noticias.html" class="nav-link">Notícias</a></li>
-                        <li class="nav-item"><a href="historia.html" class="nav-link">História</a></li>
-                    </ul>
-                </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Logotipo -->
+            <a href="/" class="navbar-brand d-flex align-items-center">
+                <img src="../complements/img/logotipo.png" alt="Logo" class="img-fluid" style="max-height: 40px;">
+            </a>
+            <!-- Botão do menu para telas pequenas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Itens da navbar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link activee">Home</a></li>
+                    <li class="nav-item"><a href="quemSomos.html" class="nav-link">Quem Somos</a></li>
+                    <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+                    <li class="nav-item"><a href="noticias.html" class="nav-link">Notícias</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contato</a></li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+    <div class="container">
 
         <div class="contentStart">
             <div class="mt-5">
@@ -91,33 +97,34 @@
             </div>
 
             <div class="contentCenter">
+                <h1>Notícias</h1>
                 <div class="row">
                     <div class="contentCenterDiv col-md-6">
-                        <img src="../complements/img/exempleImg.png" alt="">
-                        <button class="btn btn-outline-secondary" type="button">Ler Mais</button>
+                        <img id="news1" src="../complements/img/exempleImg.png" alt="">
+                        <a href="noticias.html" class="btn btn-primary">Ler Mais</a>
                     </div>
                     <div class="contentCenterDiv col-md-6">
-                        <img src="../complements/img/exempleImg.png" alt="">
-                        <button class="btn btn-outline-secondary" type="button">Ler Mais</button>
+                        <img id="news2" src="../complements/img/exempleImg.png" alt="">
+                        <a href="noticias.html" class="btn btn-primary">Ler Mais</a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="contentCenterDiv2 col-md-4">
-                        <img src="../complements/img/exempleImg.png" alt="">
-                        <button class="btn btn-outline-secondary" type="button">Ler Mais</button>
+                        <img id="news3" src="../complements/img/exempleImg.png" alt="">
+                        <a href="noticias.html" class="btn btn-primary">Ler Mais</a>
                     </div>
                     <div class="contentCenterDiv2 col-md-4">
-                        <img src="../complements/img/exempleImg.png" alt="">
-                        <button class="btn btn-outline-secondary" type="button">Ler Mais</button>
+                        <img id="news4" src="../complements/img/exempleImg.png" alt="">
+                        <a href="noticias.html" class="btn btn-primary">Ler Mais</a>
                     </div>
                     <div class="contentCenterDiv2 col-md-4">
-                        <img src="../complements/img/exempleImg.png" alt="">
-                        <button class="btn btn-outline-secondary" type="button">Ler Mais</button>
+                        <img id="news5" src="../complements/img/exempleImg.png" alt="">
+                        <a href="noticias.html" class="btn btn-primary">Ler Mais</a>
                     </div>
                 </div>
             </div>
 
-            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div id="myCarousel" class="carousel slide mb-6 mt-5" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <svg class="contentCarousel bd-placeholder-img">
@@ -127,14 +134,17 @@
                             <div class="carousel-caption">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <img src="../complements/img/objetoImg2.png" alt="">
+                                        <img src="../complements/img/exempleImg.png" alt="">
                                     </div>
                                     <div class="col-md-6">
                                         <div class="contentCarouselText">
                                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore similique saepe
-                                            consequuntur voluptates excepturi ipsum blanditiis amet, facilis ad nam exercitationem
-                                            repellat voluptate rem quisquam tenetur? Assumenda consequatur ipsam exercitationem.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+                                            similique saepe
+                                            consequuntur voluptates excepturi ipsum blanditiis amet, facilis ad nam
+                                            exercitationem
+                                            repellat voluptate rem quisquam tenetur? Assumenda consequatur ipsam
+                                            exercitationem.
                                         </div>
                                     </div>
                                 </div>
@@ -154,9 +164,12 @@
                                     <div class="col-md-6">
                                         <div class="contentCarouselText">
                                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore similique saepe
-                                            consequuntur voluptates excepturi ipsum blanditiis amet, facilis ad nam exercitationem
-                                            repellat voluptate rem quisquam tenetur? Assumenda consequatur ipsam exercitationem.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+                                            similique saepe
+                                            consequuntur voluptates excepturi ipsum blanditiis amet, facilis ad nam
+                                            exercitationem
+                                            repellat voluptate rem quisquam tenetur? Assumenda consequatur ipsam
+                                            exercitationem.
                                         </div>
                                     </div>
                                 </div>
@@ -179,29 +192,29 @@
                 <h4>repellat voluptate rem quisquam tenetur?</h4>
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="../complements/img/exempleImg.png" alt="">
+                        <img id="product-image1" src="../complements/img/exempleImg.png" alt="">
                         <div class="contentPremiumText">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et doloribus mollitia ipsa porro fuga! 
+                            <p id="product-description1"></p>
                         </div>
-                        <button class="btn btn-secondary">Ver Mais</button>
+                        <a href="produtos.html" class="btn btn-primary">Ver Mais</a>
                     </div>
                     <div class="col-md-4">
-                        <img src="../complements/img/exempleImg.png" alt="">
+                        <img id="product-image2" src="../complements/img/exempleImg.png" alt="">
                         <div class="contentPremiumText">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et doloribus mollitia ipsa porro fuga! 
+                            <p id="product-description2"></p>
                         </div>
-                        <button class="btn btn-secondary">Ver Mais</button>
+                        <a href="produtos.html" class="btn btn-primary">Ver Mais</a>
                     </div>
                     <div class="col-md-4">
-                        <img src="../complements/img/exempleImg.png" alt="">
+                        <img id="product-image3" src="../complements/img/exempleImg.png" alt="">
                         <div class="contentPremiumText">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et doloribus mollitia ipsa porro fuga! 
+                            <p id="product-description3"></p>
                         </div>
-                        <button class="btn btn-secondary">Ver Mais</button>
+                        <a href="produtos.html" class="btn btn-primary">Ver Mais</a>
                     </div>
                 </div>
             </div>
-            
+
 
             <div class="partners">
                 <h2>Parceiros</h2>
@@ -229,39 +242,43 @@
 
         </div>
 
-        <!-- Citação -->
-        <div class="string">
-            <span>"Lorem ipsum dolor sit amet consectetur adipisicing elit. In nam velit atque."</span>
-        </div>
-
-        <!-- Footer -->
-        <footer class="footer mt-auto">
-
-            <div class="container d-flex justify-content-between align-items-center py-3">
-                <div class="col-md-4">
-                    <a href="/" class="text-body-secondary text-decoration-none lh-1">
-                        <img src="../complements/img/logotipo.png" alt="Logo" class="img-fluid"
-                            style="max-height: 40px;">
-                    </a>
-                </div>
-
-                <div class="footerText col-md-4 text-center">
-                    <span>&copy; 2024 InsiraUmNome. Todos os direitos reservados.</span>
-                </div>
-
-                <div class="icons col-md-4 d-flex justify-content-center">
-                    <a href="#" class="ms-3 text-body-secondary"><i class="bi bi-twitter"
-                            style="font-size: 1.5rem;"></i></a>
-                    <a href="#" class="ms-3 text-body-secondary"><i class="bi bi-instagram"
-                            style="font-size: 1.5rem;"></i></a>
-                    <a href="#" class="ms-3 text-body-secondary"><i class="bi bi-facebook"
-                            style="font-size: 1.5rem;"></i></a>
-                </div>
-            </div>
-        </footer>
-
     </div>
 
+    <!-- Citação -->
+    <div class="string">
+        <span>"Lorem ipsum dolor sit amet consectetur adipisicing elit. In nam velit atque."</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <div class="col-md-4">
+                <a href="/" class="text-body-secondary text-decoration-none lh-1">
+                    <img src="../complements/img/logotipo.png" alt="Logo" class="img-fluid" style="max-height: 40px;">
+                </a>
+            </div>
+
+            <div class="footerText col-md-4 text-center">
+                <span>&copy; 2024 InsiraUmNome. Todos os direitos reservados.</span>
+            </div>
+
+            <div class="icons col-md-4 d-flex justify-content-center">
+                <a href="#" class="ms-3 text-body-secondary"><i class="bi bi-twitter"
+                        style="font-size: 1.5rem;"></i></a>
+                <a href="#" class="ms-3 text-body-secondary"><i class="bi bi-instagram"
+                        style="font-size: 1.5rem;"></i></a>
+                <a href="#" class="ms-3 text-body-secondary"><i class="bi bi-facebook"
+                        style="font-size: 1.5rem;"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
 </body>
+<script src="../javascript/fetchAndAddNewsIndex.js"></script>
+<script src="../javascript/fetchAndAddProductsIndex.js"></script>
+<script src="../javascript/load.js"></script>
 
 </html>

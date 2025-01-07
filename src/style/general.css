@@ -25,11 +25,14 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px; /* Adiciona um pouco de espaçamento nas laterais */
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 nav img {
-    width: 80px;
+    width: 70px;
     margin-right: 20px;
+    height: auto;
 }
 
 nav:hover {
@@ -41,7 +44,7 @@ nav:hover {
 
 /* Seção de texto */
 .string {
-    margin-top: 100px;
+    margin-top: 90px;
     text-align: center;
     background-color: #262626;
     color: #f8f8ec;
@@ -67,8 +70,9 @@ footer {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: auto; /* Garante que o footer fique no final da página */
-    width: 100%; /* Certifica-se que o footer ocupa toda a largura */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: auto; /* Garante que o footer fique sempre na parte mais baixa */
 }
 
 footer:hover {
@@ -77,13 +81,14 @@ footer:hover {
 }
 
 footer img {
-    height: 60px;
-    width: 100px;
+    width: 70px;
+    height: auto;
     margin-top: 5px; /* Margem superior */
 }
 
 .footerText {
     margin-top: 5px; /* Margem superior */
+    text-align: center;
 }
 
 /* Estilo para os ícones no footer */
@@ -183,3 +188,49 @@ footer img {
         font-size: 18px; /* Ajuste de fonte para telas grandes */
     }
 }
+
+
+
+
+
+
+/* Loader (tela de carregamento) */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    color: #f8f8ec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Fica sobre todo o conteúdo */
+}
+
+/* Spinner animado */
+.spinner {
+    border: 5px solid #616161; /* Cor de fundo */
+    border-top: 5px solid #f8f8ec; /* Cor do topo (dá o efeito de rotação) */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Animação de rotação */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Esconde o conteúdo da página até o loader sumir */
+.content, nav, footer {
+    display: none;
+}
+
