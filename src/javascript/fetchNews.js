@@ -13,4 +13,3 @@ async function fetchNews() {
         console.error('Erro ao buscar notícias:', error);
     }
 }
-fetchNews()

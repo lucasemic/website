@@ -17,4 +17,3 @@ async function fetchAndAddProductsIndex() {
         console.error('Erro ao buscar produtos:', error);
     }
 }
-fetchAndAddProductsIndex()

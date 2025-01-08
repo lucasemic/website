@@ -150,12 +150,13 @@
 }
 
 .contentPremiumText {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    /* Limite de 3 linhas */
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: -webkit-box; /* Ativa o uso de Webkit Box */
+    -webkit-box-orient: vertical; /* Define a orientação para vertical */
+    -webkit-line-clamp: 2; /* Número de linhas desejado */
+    overflow: hidden; /* Esconde o texto que ultrapassa o limite */
+    text-overflow: ellipsis; /* Adiciona reticências ao final do texto cortado */
 }
 
 .partners {
@@ -223,8 +224,8 @@
     }
 
     .contentMasterImg img {
-        width: 450px;
-        margin-left: 10px;
+        width: 350px;
+        align-items: center;
     }
 
     .contentMasterText {

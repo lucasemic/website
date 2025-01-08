@@ -23,4 +23,3 @@ async function fetchProducts() {
         console.error('Erro ao buscar produtos:', error);
     }
 }
-fetchProducts()

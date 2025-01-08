@@ -1,5 +1,5 @@
 // Função para buscar detalhes do produto da API
-async function fetchNewsDetails(newsId) {
+async function fetchNewsDetails() {
     try {
         const response = await fetch(`https://fakestoreapi.com/products/${newsId}`);
         const product = await response.json();
@@ -23,4 +23,3 @@ async function fetchNewsDetails(newsId) {
 // Obtendo o ID do produto da URL
 const urlParams = new URLSearchParams(window.location.search);
 const newsId = urlParams.get('id');
-fetchNewsDetails(newsId)

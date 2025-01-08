@@ -2,8 +2,7 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100%; /* Garante que a altura da página ocupe a tela inteira */
-    flex: 1;
+    min-height: 100vh; /* Garante que a altura da página ocupe a tela inteira */
     margin: 0;
 }
 
@@ -138,7 +137,11 @@ footer img {
     }
 
     .footerText {
-        font-size: 14px; /* Fonte um pouco menor em telas pequenas */
+        font-size: x-small;
+    }
+
+    .string {
+        font-size: x-small;
     }
     
 }
@@ -190,10 +193,6 @@ footer img {
 }
 
 
-
-
-
-
 /* Loader (tela de carregamento) */
 #loader {
     position: fixed;
@@ -208,6 +207,7 @@ footer img {
     justify-content: center;
     align-items: center;
     z-index: 1000; /* Fica sobre todo o conteúdo */
+    overflow: hidden; /* Impede o scroll durante o carregamento */
 }
 
 /* Spinner animado */
@@ -229,8 +229,11 @@ footer img {
     }
 }
 
-/* Esconde o conteúdo da página até o loader sumir */
-.content, nav, footer {
-    display: none;
+/* Esconde apenas visualmente, sem afetar o fluxo */
+.hidden {
+    visibility: hidden; /* O elemento permanece no layout, mas fica invisível */
+    opacity: 0; /* Para um efeito de transição, se necessário */
+    transition: opacity 0.3s ease;
 }
+
 

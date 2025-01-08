@@ -17,4 +17,3 @@ async function fetchAndAddNewsIndex() {
         console.error('Erro ao buscar notícias:', error);
     }
 }
-fetchAndAddNewsIndex()
