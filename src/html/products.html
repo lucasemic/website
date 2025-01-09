@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
     <!-- CSS personalizado -->
-    <link rel="stylesheet" href="../style/produtos.css">
+    <link rel="stylesheet" href="../style/products.css">
     <link rel="stylesheet" href="../style/general.css">
     <!-- Popper.js -->
     <script src="../../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
@@ -42,26 +42,30 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="quemSomos.html" class="nav-link">Quem Somos</a></li>
-                    <li class="nav-item"><a href="produtos.html" class="nav-link  activee">Produtos</a></li>
-                    <li class="nav-item"><a href="noticias.html" class="nav-link">Notícias</a></li>
+                    <li class="nav-item"><a href="aboutUs.html" class="nav-link">Quem Somos</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link  activee">Produtos</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">Notícias</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contato</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- conteudo da pagina -->
     <div class="container">
 
+        <!-- espaço para apresentar produtos -->
         <div class="contentStart">
             <div class="row">
                 <div class="col-md-6">
                     <div class="contentStartTitle">
+                        <!-- titulo exmplo-->
                         <h1>Lorem Ipsum</h1>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="contentStartText">
+                        <!-- texto exmplo -->
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem pariatur ex veniam,
                         consequuntur consequatur,
                         cumque architecto ratione enim reprehenderit temporibus iure cum quod at aut voluptatibus a fuga
@@ -71,16 +75,18 @@
             </div>
         </div>
 
+        <!-- carousel de produtos -->
         <div id="product-carousel" class="carousel">
-            <!-- Produtos serão adicionados aqui dinamicamente -->
+            <!-- produtos serão adicionados aqui por js -->
         </div>
 
-        <!-- Barra de Pesquisa -->
+        <!-- aba de pesquisa de produtos -->
         <div class="search-container">
             <input id="searchInput" type="text" class="search-input" placeholder="Pesquise seu produto aqui...">
-            <button class="search-button" onclick="fetchResults()">Pesquisar</button>
+            <button class="search-button" onclick="fetchResultsSearch()">Pesquisar</button>
         </div>
 
+        <!-- botões para filtrar produtos -->
         <div class="filter-container">
             <div class="filter-buttons">
                 <button class="filter-btn" id="filter-all" onclick="fetchProducts()">limpar</button>
@@ -102,16 +108,15 @@
             <h3 class="text-center mt-4" id="filterTitle"></h3>
         </div>
 
+        <!-- lista de produtos carregados pela pagina, pesquisados ou filtrados -->
         <div id="product-list" class="product-list">
-            <!-- Produtos serão adicionados aqui dinamicamente -->
+            <!-- produtos serão adicionados aqui por js -->
         </div>
 
-        <!-- produtos -->
+        <!-- grade de produtos carregados pela pagina, pesquisados ou filtrados -->
         <div id="product-grid" class="product-grid">
-            <!-- Produtos serão adicionados aqui dinamicamente -->
+            <!-- produtos serão adicionados aqui por js -->
         </div>
-
-        <!-- ============================================================================================================= -->
 
     </div>
 
@@ -148,7 +153,6 @@
 <script src="../javascript/addProduct.js"></script>
 <script src="../javascript/fetchProducts.js"></script>
 <script src="../javascript/fetchProductsBy.js"></script>
-<script src="../javascript/fetchResults.js"></script>
+<script src="../javascript/fetchResultsSearch.js"></script>
 <script src="../javascript/load.js"></script>
-
 </html>

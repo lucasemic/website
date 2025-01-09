@@ -1,5 +1,5 @@
-
-.product{
+.product {
+    /* Estilo do contêiner do produto, com margens, centralização do texto, fundo cinza claro, bordas arredondadas e sombra */
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
@@ -15,6 +15,7 @@
 }
 
 .product-title {
+    /* Estilo do título do produto, com margem superior, tamanho de fonte grande e cor escura */
     margin-top: 20px;
     font-size: 2em;
     font-weight: bold;
@@ -22,6 +23,7 @@
 }
 
 .product-image {
+    /* Estilo da imagem do produto, com largura de 70%, bordas arredondadas e margem */
     width: 70%;
     height: auto;
     max-width: 500px;
@@ -31,11 +33,13 @@
 }
 
 .product-description {
+    /* Estilo da descrição do produto, com tamanho de fonte médio e cor cinza escura */
     font-size: 1.2em;
     color: #555;
 }
 
 .product-price {
+    /* Estilo do preço do produto, com fonte grande, peso em negrito e cor azul */
     font-size: 1.5em;
     font-weight: bold;
     color: #007BFF;
@@ -43,16 +47,18 @@
 }
 
 .back-button {
+    /* Estilo do botão de voltar, com margem superior */
     margin-top: 20px;
     display: block;
 }
 
 .back-button:hover {
+    /* Efeito ao passar o mouse sobre o botão de voltar (sublinhado) */
     text-decoration: underline;
 }
 
-/* layout 2*/
 .carousel {
+    /* Estilo do carrossel de produtos, com rolagem horizontal, tipo de rolagem obrigatória e espaçamento entre itens */
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -60,16 +66,19 @@
     padding: 20px;
 }
 
-.product-details{
+.product-details {
+    /* Estilo da seção de detalhes do produto, alinhado à esquerda */
     text-align: left;
 }
 
-.product-details h4{
- margin-left: 40px;
- margin-bottom: 20px;
+.product-details h4 {
+    /* Estilo do título da seção de detalhes, com margem à esquerda e margem inferior */
+    margin-left: 40px;
+    margin-bottom: 20px;
 }
 
-.detail{
+.detail {
+    /* Estilo de cada detalhe do produto, com bordas arredondadas, fundo branco e margem inferior */
     margin-bottom: 10px;
     border-radius: 2px;
     background-color: white;

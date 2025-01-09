@@ -1,37 +1,40 @@
-.contentStart{
+.contentStart {
+    /* Estilo do container de início, com margens superiores e inferiores */
     margin-top: 50px;
     margin-bottom: 100px;
 }
 
-.contentStartTitle{
+.contentStartTitle {
+    /* Estilo do título de início, centralizado com margem superior */
     text-align: center;
     margin-top: 8%;
 }
 
-.contentStartText{
+.contentStartText {
+    /* Estilo do texto de início, centralizado com margem superior */
     text-align: center;
     margin-top: 6%;
 }
 
-
 .news-grid {
+    /* Estilo da grade de notícias, com layout responsivo */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Define duas colunas de tamanhos iguais */
     gap: 70px;
     margin-bottom: 100px;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto semitransparente */
-    border-radius: 50%; /* Torna os ícones circulares */
+    /* Estilo dos ícones de navegação da carousel */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
     width: 40px;
     height: 40px;
 }
 
 .news-card {
+    /* Estilo de cada cartão de notícia */
     background: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -41,35 +44,42 @@
     margin: 20px 00px 0px 00px;
     overflow-x: scroll;
 }
+
 .news-card:hover {
+    /* Efeito ao passar o mouse sobre o cartão de notícia */
     transform: translateY(-5px);
 }
 
 .news-image {
+    /* Estilo das imagens dentro dos cartões de notícia */
     width: auto;
     height: 200px;
     object-fit: cover;
-    display: block; /* Torna a imagem um elemento de bloco */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    display: block; 
+    margin: 0 auto; 
 }
 
 .news-content {
+    /* Estilo do conteúdo dentro do cartão de notícia */
     padding: 15px;
 }
 
 .news-title {
+    /* Estilo do título dentro do cartão de notícia */
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0;
 }
 
 .news-description {
+    /* Estilo da descrição dentro do cartão de notícia */
     font-size: 14px;
     color: #555;
     margin-bottom: 15px;
 }
 
 .news-button {
+    /* Estilo do botão dentro do cartão de notícia */
     background-color: #007BFF;
     color: white;
     border: none;
@@ -82,19 +92,20 @@
 }
 
 .news-button:hover {
+    /* Efeito ao passar o mouse sobre o botão */
     background-color: #0056b3;
 }
 
-/* Responsividade para telas pequenas */
 @media (max-width: 767px) {
+    /* Estilo para telas pequenas, ajustando a grade para uma coluna */
     .news-grid {
-        grid-template-columns: 1fr; /* Define uma coluna */
+        grid-template-columns: 1fr;
     }
 }
 
-/* Ajustes para telas médias */
 @media (min-width: 768px) and (max-width: 991px) {
+    /* Estilo para telas médias, ajustando a grade para uma coluna */
     .news-grid {
-        grid-template-columns: 1fr; /* Define uma coluna */
+        grid-template-columns: 1fr;
     }
 }

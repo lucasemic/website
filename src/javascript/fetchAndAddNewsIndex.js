@@ -1,11 +1,11 @@
-// Função para buscar produtos da API
+// função para adicionar algumas noticias na pagina principar
 async function fetchAndAddNewsIndex() {
     try {
-        // Simulação de API
+        // exemplo de url (funcional)
         const response = await fetch(`https://fakestoreapi.com/products`);
         const newss = await response.json();
 
-        // Adiciona os produtos retornados pela API
+        // adiciona até chegar ou limite de 5 noticias
         let num = 1
         newss.forEach(news => {
             if (num <= 5) {

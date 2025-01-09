@@ -1,7 +1,11 @@
-const currentPage = document.body.dataset.page; // Identifica a página atual
+// responsavel pela tela de carregamento de todos as paginas que possuem js
+
+//pega id da pagina
+const currentPage = document.body.dataset.page;
 
 let scriptsToExecute = [];
 
+//descobre quais scripts executar baseado na pagina
 if (currentPage === 'home') {
     scriptsToExecute = [fetchAndAddNewsIndex, fetchAndAddProductsIndex];
 } else if (currentPage === 'newsDetails') {
@@ -14,14 +18,13 @@ if (currentPage === 'home') {
     scriptsToExecute = [fetchProducts];
 }
 
-
-// Espera a execução de todos os scripts
+//espera todos os scripts terminarem para liberar a pagina
 Promise.all(scriptsToExecute.map(script => script()))
     .then(() => {
-    // Quando todos os scripts terminarem, ocultamos o loader
+    // retira o loader
     document.getElementById('loader').style.display = 'none';
 
-    // Exibe o conteúdo da página
+    // mostra o conteudo
     document.querySelectorAll('nav, .content, footer').forEach(el => {
         el.style.display = 'hidden';
     });

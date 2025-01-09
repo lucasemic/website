@@ -1,22 +1,26 @@
-/* Estilo Geral */
 html, body {
+    /* Estilo básico do HTML e body, sem margens ou preenchimento, largura de 100%, altura mínima de 100% */
     margin: 0;
     padding: 0;
     width: 100%;
     min-height: 100%;
-    overflow-x: hidden; /* Impede rolagem horizontal */
+    overflow-x: hidden; 
 }
+
 .back-button {
+    /* Estilo do botão de voltar, centralizado e com margem superior */
     margin-top: 20px;
     margin-left: 40%;
     display: block;
 }
 
 .back-button:hover {
+    /* Efeito ao passar o mouse sobre o botão de voltar (sublinhado) */
     text-decoration: underline;
 }
 
 .news-title {
+    /* Estilo do título das notícias, com texto centralizado, margem e tamanho de fonte grande */
     font-size: 32px;
     margin: 0;
     color: black;
@@ -28,13 +32,14 @@ html, body {
     justify-content: center;
 }
 
-/* Imagem da Notícia */
 .image-container {
+    /* Estilo do container da imagem, centralizado com margens */
     text-align: center;
     margin: 20px 0;
 }
 
 .news-image {
+    /* Estilo da imagem de notícia, largura 100%, com bordas arredondadas e sombra */
     width: 100%;
     max-width: 800px;
     height: auto;
@@ -42,8 +47,8 @@ html, body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Descrição da Notícia */
 .news-description {
+    /* Estilo da descrição da notícia, com preenchimento, fundo branco, bordas arredondadas e sombra */
     padding: 20px;
     background-color: #ffffff;
     margin: 20px auto;
@@ -54,8 +59,8 @@ html, body {
     line-height: 1.8;
 }
 
-/* Informações Adicionais */
 .additional-info {
+    /* Estilo para a seção de informações adicionais, com preenchimento, fundo cinza e sombra */
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
@@ -65,15 +70,18 @@ html, body {
 }
 
 .additional-info h3 {
+    /* Estilo do título das informações adicionais (sem margem superior) */
     margin-top: 0;
 }
 
 .additional-info ul {
+    /* Estilo para a lista de informações adicionais, sem estilo de lista */
     list-style: none;
     padding: 0;
 }
 
 .additional-info li {
+    /* Estilo dos itens da lista de informações adicionais (margem inferior) */
     margin: 10px 0;
 }
 

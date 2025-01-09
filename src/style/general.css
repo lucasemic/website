@@ -1,12 +1,12 @@
-/* Corpo da página com flexbox */
+/* Definição do layout do body para garantir que a altura mínima seja 100% da altura da tela */
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Garante que a altura da página ocupe a tela inteira */
+    min-height: 100vh;
     margin: 0;
 }
 
-/* Estilo para o item ativo na navbar */
+/* Estilo para o elemento com a classe 'activee', aplicando fundo escuro, borda arredondada e cor de texto clara */
 .activee {
     background-color: #393939;
     border-radius: 7px;
@@ -14,34 +14,35 @@ body {
     padding: 5px;
 }
 
-/* Estilos para a navbar */
+/* Estilos para a barra de navegação, com animação de transição no tamanho e no movimento ao passar o mouse */
 nav {
     background-color: #616161;
     border-radius: 0px 0px 20px 20px;
-    height: 70px; /* Altura inicial */
+    height: 70px;
+    /* Altura inicial */
     transition: height 0.5s ease, transform 0.5s ease;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Adiciona um pouco de espaçamento nas laterais */
+    padding: 0 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
+/* Definição do tamanho da imagem dentro da navegação */
 nav img {
     width: 70px;
     margin-right: 20px;
     height: auto;
 }
 
+/* Efeito de expansão e transformação no hover da barra de navegação */
 nav:hover {
-    height: 100px; /* Altura ao passar o mouse */
+    height: 100px;
     transform: translateZ(-30px);
 }
 
-
-
-/* Seção de texto */
+/* Estilo para o bloco .string com cor de fundo escura, texto claro, bordas arredondadas e efeito de transição */
 .string {
     margin-top: 90px;
     text-align: center;
@@ -55,15 +56,16 @@ nav:hover {
     transition: transform 0.5s ease, background-color 0.3s ease;
 }
 
+/* Efeito de escalonamento no hover do elemento .string */
 .string:hover {
-    transform: scale(1.05); /* Aumenta 5% no hover */
+    transform: scale(1.05);
 }
 
-/* Estilo do footer */
+/* Estilos para o rodapé com animação semelhante à navegação, incluindo o efeito de hover */
 footer {
     background-color: #616161;
     border-radius: 20px 20px 0px 0px;
-    height: 70px; /* Altura inicial */
+    height: 70px;
     transition: height 0.5s ease, transform 0.5s ease;
     display: flex;
     justify-content: center;
@@ -71,43 +73,43 @@ footer {
     position: relative;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: auto; /* Garante que o footer fique sempre na parte mais baixa */
+    margin-top: auto;
 }
 
+/* Efeito de expansão no hover do rodapé */
 footer:hover {
     height: 100px;
     transform: translateY(-30px);
 }
 
+/* Estilo para a imagem dentro do rodapé */
 footer img {
     width: 70px;
     height: auto;
-    margin-top: 5px; /* Margem superior */
+    margin-top: 5px;
 }
 
+/* Estilos para o texto no rodapé */
 .footerText {
-    margin-top: 5px; /* Margem superior */
+    margin-top: 5px;
     text-align: center;
 }
 
-/* Estilo para os ícones no footer */
+/* Alinhamento flexível para os ícones dentro do rodapé */
 .icons {
-    display: flex; /* Organiza os itens em linha */
-    justify-content: center; /* Centraliza os ícones horizontalmente */
-    margin-top: 5px; /* Margem superior */
-    gap: 20px; /* Espaço entre os ícones */
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    gap: 20px;
 }
 
-/* =========================================================================================================================================== */
-
-/* Responsividade para telas pequenas */
+/* Media query para telas pequenas (<= 767px), ajustando o layout e os tamanhos */
 @media (max-width: 767px) {
-    /* Ajuste a navbar para dispositivos pequenos */
     nav {
         height: 60px;
         flex-direction: column;
         justify-content: center;
-        padding: 10px 15px; /* Ajuste no padding */
+        padding: 10px 15px;
     }
 
     nav img {
@@ -116,19 +118,19 @@ footer img {
         margin-bottom: 10px;
     }
 
-    /* Navbar */
     .navbar-nav {
-        text-align: center; /* Centraliza os itens */
-        width: 100%; /* Garantir que ocupe toda a largura */
+        text-align: center;
+        width: 100%;
+        background-color: #616161;
+        border-radius: 10px 10px;
     }
 
     .navbar-toggler {
         margin-right: 10px;
     }
 
-    /* Ícones do footer em telas pequenas */
     .icons {
-        gap: 15px; /* Menor espaço entre os ícones */
+        gap: 15px;
     }
 
     footer {
@@ -143,57 +145,35 @@ footer img {
     .string {
         font-size: x-small;
     }
-    
+
 }
 
-/* =========================================================================================================================================== */
-
-/* Ajustes para telas médias */
+/* Media query para telas médias (768px <= largura <= 991px), ajustando tamanhos de fonte e layout */
 @media (min-width: 768px) and (max-width: 991px) {
     .navbar-nav {
-        font-size: 16px; /* Tamanho da fonte um pouco menor para telas médias */
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        background-color: #616161;
+        border-radius: 10px 10px;
     }
 
     .icons {
-        gap: 20px; /* Espaço normal entre ícones */
+        gap: 20px;
     }
 
     footer {
         flex-direction: row;
-        justify-content: space-around; /* Distribui os itens */
+        justify-content: space-around;
         padding: 20px;
     }
 
     .footerText {
-        font-size: 16px; /* Ajuste de fonte para telas médias */
+        font-size: 16px;
     }
 }
 
-/* =========================================================================================================================================== */
-
-/* Ajustes para telas grandes */
-@media (min-width: 992px) {
-    nav {
-        padding: 0 30px; /* Mais espaçamento nas laterais */
-    }
-
-    .navbar-nav {
-        font-size: 18px; /* Tamanho de fonte maior para telas grandes */
-    }
-
-    footer {
-        flex-direction: row;
-        justify-content: space-between; /* Distribui os itens */
-        padding: 30px;
-    }
-
-    .footerText {
-        font-size: 18px; /* Ajuste de fonte para telas grandes */
-    }
-}
-
-
-/* Loader (tela de carregamento) */
+/* Estilo para a tela de carregamento, com um fundo escuro e uma animação de spinner */
 #loader {
     position: fixed;
     top: 0;
@@ -206,34 +186,34 @@ footer img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Fica sobre todo o conteúdo */
-    overflow: hidden; /* Impede o scroll durante o carregamento */
+    z-index: 1000;
+    overflow: hidden;
 }
 
-/* Spinner animado */
+/* Estilo do spinner, com uma animação de rotação */
 .spinner {
-    border: 5px solid #616161; /* Cor de fundo */
-    border-top: 5px solid #f8f8ec; /* Cor do topo (dá o efeito de rotação) */
+    border: 5px solid #616161;
+    border-top: 5px solid #f8f8ec;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    animation: spin 1s linear infinite; /* Animação de rotação */
+    animation: spin 1s linear infinite;
 }
 
+/* Animação de rotação do spinner */
 @keyframes spin {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
 }
 
-/* Esconde apenas visualmente, sem afetar o fluxo */
+/* Classe para esconder elementos com transição suave de opacidade */
 .hidden {
-    visibility: hidden; /* O elemento permanece no layout, mas fica invisível */
-    opacity: 0; /* Para um efeito de transição, se necessário */
+    visibility: hidden;
+    opacity: 0;
     transition: opacity 0.3s ease;
 }
-
-

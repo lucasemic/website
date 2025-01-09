@@ -1,13 +1,16 @@
-.contentStart{
+/* Define a margem superior para a seção inicial */
+.contentStart {
     margin-top: 50px;
 }
 
-.contentStartTitle{
+/* Alinha o título da seção inicial ao centro e define uma margem superior */
+.contentStartTitle {
     text-align: center;
     margin-top: 6%;
 }
 
-.contentHidden{
+/* Estilo da seção ocultável com margem, cor, borda e animação */
+.contentHidden {
     margin-top: 50px;
     background-color: #616161;
     border-radius: 10px;
@@ -16,47 +19,56 @@
     transition: height 0.5s ease, background-color 0.5s ease;
 }
 
-.contentHiddenTitle{
+/* Margem para o título dentro da seção ocultável */
+.contentHiddenTitle {
     margin-left: 10px;
 }
 
-.contentHiddenText{
+/* Define o texto como transparente inicialmente */
+.contentHiddenText {
     margin-left: 10px;
     color: transparent;
 }
 
+/* Animação para aumentar a altura e mudar a cor da seção ao passar o mouse */
 .contentHidden:hover {
     height: 150px; 
     background-color: #515151; 
 }
 
+/* Altera a cor do texto oculto ao passar o mouse */
 .contentHidden:hover .contentHiddenText {
     color: #fff; 
     transition: color 0.5s ease; 
 }
 
-.contentMaster{
+/* Define estilo de texto e alinhamento centralizado */
+.contentMaster {
     margin-top: 50px;
     text-align: center;
 }
 
-.contentMasterImg img{
+/* Estilo para imagens dentro da seção principal, com bordas arredondadas e sombra */
+.contentMasterImg img {
     margin-top: 30px;
     width: 400px;
     border-radius: 30px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
 }
 
-.contentMasterText{
+/* Define alinhamento à esquerda para textos dentro da seção principal */
+.contentMasterText {
     margin-top: 30px;
     text-align: left;
 }
 
-.contentCenter{
+/* Margem superior para a seção central */
+.contentCenter {
     margin-top: 100px;
 }
 
-.contentCenterText{
+/* Estilo para textos da seção central com sombra e bordas arredondadas */
+.contentCenterText {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     width: 45%;
@@ -64,39 +76,46 @@
     margin-left: 34px;
 }
 
+/* Oculta os retângulos no carrossel */
 .contentCarousel rect {
     display: none;
 }
 
-.carousel h1{
+/* Centraliza e adiciona margem ao título dentro do carrossel */
+.carousel h1 {
     text-align: center;
     margin-top: 130px;
 }
 
+/* Define dimensões e fundo do carrossel */
 .contentCarousel {
     width: 100%;
     height: 400px;
     background: transparent !important;
 }
 
-.contentCarouselLine{
+/* Margem negativa para o texto dentro do carrossel */
+.contentCarouselLine {
     color: black;
     margin-left: -180px;
 }
 
-.contentCarouselText{
+/* Define margens e cor para textos no carrossel */
+.contentCarouselText {
     margin-bottom: 100px;
     color: black;
     margin-left: 120px;
     margin-right: 120px;
 }
 
-.colorIconCorousel{
+/* Estilo para ícones coloridos dentro do carrossel */
+.colorIconCorousel {
     background-color: #515151;
     border-radius: 10px;
 }
 
-.contentCarouselDate{
+/* Estilo para datas dentro do carrossel */
+.contentCarouselDate {
     background-color: #515151;
     border-radius: 25px;
     margin-bottom: 20px;
@@ -104,13 +123,15 @@
     margin-right: 260px;
 }
 
-.contentEnd{
-    display: flex; /* Habilita o Flexbox */
-    justify-content: center; /* Alinha horizontalmente ao centro */
-    flex-wrap: wrap; /* Permite quebra para próximas linhas, se necessário */
+/* Alinha conteúdo final ao centro e permite flex-wrap */
+.contentEnd {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
 }
 
-.contentEndImg{
+/* Estilo para imagens na seção final com animação de altura e cor */
+.contentEndImg {
     margin-top: 25px;
     display: flex;
     justify-content: center;
@@ -126,27 +147,29 @@
     color: transparent;
 }
 
-.contentEndImg:hover{
+/* Animação para imagens da seção final ao passar o mouse */
+.contentEndImg:hover {
     height: 380px; 
     background-color: #515151; 
     color: #fff;
 }
 
-.contentEndImg img{
+/* Estilo para imagens dentro das seções finais */
+.contentEndImg img {
     border-radius: 12px;
     margin-top: 20px;
     height: 100px;
     width: 100%;
 }
 
-
-
+/* Responsividade para telas menores que 767px */
 @media (max-width: 767px) {
-    .contentStart{
+    .contentStart {
         text-align: justify;
     }
 
-    .contentHidden{
+    /* Altera estilo da seção ocultável para dispositivos menores */
+    .contentHidden {
         margin-top: 50px;
         background-color: #616161;
         border-radius: 10px;
@@ -155,16 +178,18 @@
         transition: height 0.5s ease, background-color 0.5s ease;
     }
     
+    /* Aumenta altura ao passar o mouse em dispositivos menores */
     .contentHidden:hover {
-        height: 290px; /* Aumenta a altura da div */
-        background-color: #515151; /* Altere a cor do fundo, se desejar */
+        height: 290px; 
+        background-color: #515151; 
     }
 
-    .contentMasterText{
+    .contentMasterText {
         text-align: justify;
     }
 
-    .contentCenterText{
+    /* Ajusta largura e margens da seção central em dispositivos menores */
+    .contentCenterText {
         width: 100%;
         height: 100%;
         margin-top: 15px;
@@ -177,19 +202,19 @@
         background: transparent !important;
     }
     
-    .contentCarouselLine{
+    .contentCarouselLine {
         color: black;
         margin-left: -180px;
     }
     
-    .contentCarouselText{
+    .contentCarouselText {
         text-align: center;
         color: black;
         margin-left: 10px;
         margin-right: 10px;
     }
     
-    .contentCarouselDate{
+    .contentCarouselDate {
         background-color: #515151;
         border-radius: 25px;
         margin-bottom: 20px;
@@ -197,18 +222,18 @@
         margin-right: 70px;
     }
 
-    .contentEnd{
+    .contentEnd {
         margin-left: 25%;
     }
-
 }
 
+/* Responsividade para telas entre 768px e 991px */
 @media (min-width: 768px) and (max-width: 991px) {
-    .contentStartTitle{
+    .contentStartTitle {
         margin-top: 100px;
     }
 
-    .contentHidden{
+    .contentHidden {
         margin-top: 50px;
         background-color: #616161;
         border-radius: 10px;
@@ -218,8 +243,8 @@
     }
     
     .contentHidden:hover {
-        height: 240px; /* Aumenta a altura da div */
-        background-color: #515151; /* Altere a cor do fundo, se desejar */
+        height: 240px; 
+        background-color: #515151; 
     }
 
     .contentCarousel {
@@ -228,27 +253,27 @@
         background: transparent !important;
     }
     
-    .contentCarouselLine{
+    .contentCarouselLine {
         color: black;
         margin-left: -180px;
     }
     
-    .contentCarouselText{
+    .contentCarouselText {
         text-align: center;
         color: black;
         margin-left: 10px;
         margin-right: 10px;
     }
     
-    .contentCarouselDate{
+    .contentCarouselDate {
         background-color: #515151;
         border-radius: 25px;
         margin-bottom: 20px;
         margin-left: 70px;
         margin-right: 70px;
     }
-    .contentEnd{
+
+    .contentEnd {
         margin-left: 0;
     }
-
 }

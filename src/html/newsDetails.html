@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -42,42 +42,46 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="quemSomos.html" class="nav-link">Quem Somos</a></li>
-                    <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
-                    <li class="nav-item"><a href="noticias.html" class="nav-link activee">Notícias</a></li>
+                    <li class="nav-item"><a href="aboutUs.html" class="nav-link">Quem Somos</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">Produtos</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link activee">Notícias</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contato</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- conteudo da pagina -->
     <div class="container">
 
+        <!-- titulo da noticia (este campo será preenchido por js) -->
         <h1 class="news-title" id="news-title">Título da Notícia</h1>
 
         <div class="content">
+            <!-- imagem da noticia (este campo será preenchido por js) -->
             <div class="image-container">
                 <img alt="Imagem da notícia" class="news-image" id="news-image">
             </div>
 
             <section class="news-description">
+                <!-- descrição da noticia (este campo será preenchido por js) -->
                 <h3>Descrição</h3>
                 <p id="news-description">
 
                 </p>
 
+                <!-- detalhes da noticia (este campo será preenchido por js) -->
                 <h3>Detalhes</h3>
                 <ul>
-                    <li id="#news-date#"><strong>Data de publicação:</strong> 02 de janeiro de 2025</li>
-                    <li id="#news-autor#"><strong>Autor:</strong> Nome do Autor</li>
-                    <li id="#news-font#"><strong>Fonte:</strong> Agência de Notícias</li>
-                    <a href="noticias.html" class="back-button"><i class="bi bi-arrow-left"></i> Voltar</a>
+                    <li id="#news-date#"><strong>Data de publicação:</strong> </li>
+                    <li id="#news-autor#"><strong>Autor:</strong> </li>
+                    <li id="#news-font#"><strong>Fonte:</strong></li>
+                    <a href="news.html" class="back-button"><i class="bi bi-arrow-left"></i> Voltar</a>
                 </ul>
             </section>
         </div>
 
     </div>
-
 
     <!-- Citação -->
     <div class="string">
@@ -112,5 +116,4 @@
 </body>
 <script src="../javascript/fetchNewsDetails.js"></script>
 <script src="../javascript/load.js"></script>
-
 </html>

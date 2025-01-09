@@ -1,11 +1,11 @@
-// Função para buscar produtos da API
+// função responsavel por pegar noticias da api
 async function fetchNews() {
     try {
-        // Simulação de API
+        // exemplo de url (funcional)
         const response = await fetch(`https://fakestoreapi.com/products`);
         const newss = await response.json();
 
-        // Adiciona os produtos retornados pela API
+        // manda para a função de preencher pagina com noticias
         newss.forEach(news => {
             addNews(news.image, news.title, news.description, news.id);
         });

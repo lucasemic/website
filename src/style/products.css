@@ -1,24 +1,26 @@
-/* Estilo da barra de pesquisa */
 .search-container {
+    /* Contêiner da barra de pesquisa, centralizado, com fundo escuro, bordas arredondadas e transições suaves */
     margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:   #262626;
+    background-color: #262626;
     padding: 10px;
     margin-left: 90px;
     margin-right: 90px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     transition: transform 0.5s ease, background-color 0.3s ease;
 }
 
 .search-container:hover {
-    transform: scale(1.05); /* Aumenta 5% no hover */
+    /* Efeito de escala ao passar o mouse sobre o contêiner */
+    transform: scale(1.05);
 }
 
 .search-input {
-    width: 70%; /* Ocupa 70% da largura do container */
-    max-width: 800px; /* Limite máximo de largura */
+    /* Estilo do campo de entrada de texto (input), com bordas arredondadas e sombra */
+    width: 70%;
+    max-width: 800px;
     padding: 10px 15px;
     font-size: 18px;
     border: 1px solid #ccc;
@@ -28,6 +30,7 @@
 }
 
 .search-button {
+    /* Estilo do botão de pesquisa, com fundo cinza escuro, bordas arredondadas e transição de cor */
     padding: 10px 20px;
     font-size: 18px;
     background-color: #616161;
@@ -39,48 +42,51 @@
 }
 
 .search-button:hover {
+    /* Efeito de mudança de cor ao passar o mouse sobre o botão de pesquisa */
     background-color: #0056b3;
 }
 
-
-.contentStart{
+.contentStart {
+    /* Contêiner da seção inicial com margens superior e inferior definidas */
     margin-top: 50px;
     margin-bottom: 100px;
 }
 
-.contentStartTitle{
+.contentStartTitle {
+    /* Estilo do título da seção inicial, centralizado com margem superior */
     text-align: center;
     margin-top: 8%;
 }
 
-.contentStartText{
+.contentStartText {
+    /* Estilo do texto da seção inicial, centralizado com margem superior */
     text-align: center;
     margin-top: 6%;
 }
 
-/* Contêiner geral dos filtros */
 .filter-container {
+    /* Estilo do contêiner de filtros, centralizado */
     text-align: center;
     margin: 50px 0;
 }
 
-/* Título dos filtros */
 .filter-title {
+    /* Estilo do título da seção de filtros, com tamanho de fonte grande e margem inferior */
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-/* Alinhar os botões horizontalmente */
 .filter-buttons {
+    /* Estilo do contêiner dos botões de filtro, com flexbox para centralização e espaçamento entre os itens */
     display: flex;
     justify-content: center;
-    gap: 10px; /* Espaçamento entre os botões */
+    gap: 10px;
     flex-wrap: wrap;
 }
 
-/* Estilo dos botões */
 .filter-btn {
+    /* Estilo de cada botão de filtro, com fundo cinza escuro, bordas arredondadas e transição de cor */
     padding: 10px 20px;
     font-size: 16px;
     background-color: #616161;
@@ -89,17 +95,18 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    flex: 1 1 auto; /* Permite ajuste dinâmico de tamanho */
-    max-width: 150px; /* Define um limite de largura */
+    flex: 1 1 auto;
+    max-width: 150px;
     text-align: center;
 }
 
-/* Efeito ao passar o mouse sobre o botão */
 .filter-btn:hover {
+    /* Efeito de mudança de cor ao passar o mouse sobre os botões de filtro */
     background-color: #333;
 }
 
 @media (max-width: 768px) {
+    /* Ajustes para telas menores, reduzindo o tamanho da fonte e os botões */
     .filter-title {
         font-size: 20px;
     }
@@ -113,12 +120,14 @@
     .search-button {
         font-size: 8px;
     }
+
     .search-input {
         font-size: 8px;
     }
 }
 
 @media (max-width: 480px) {
+    /* Ajustes para telas ainda menores */
     .filter-title {
         font-size: 18px;
     }
@@ -130,60 +139,59 @@
     }
 }
 
-
-
 .product-container {
+    /* Contêiner de produtos, com flexbox e espaçamento entre os itens */
     display: flex;
-    flex-wrap: wrap;  /* Permite que os produtos quebrem para a linha seguinte */
-    gap: 20px;  /* Espaçamento entre os produtos */
-    justify-content: space-between;  /* Garantir que os produtos tenham o máximo de espaçamento possível */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
     padding: 20px;
 }
 
 .product {
+    /* Estilo de cada produto, com bordas arredondadas, sombra e flexbox para disposição */
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: calc(33.333% - 20px); /* Tamanho padrão para 3 colunas (ajustado por gap) */
-    box-sizing: border-box;  /* Para garantir que o padding e o gap sejam considerados */
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
     display: flex;
-    flex-direction: column;  /* Coloca o conteúdo do produto em uma coluna */
-    justify-content: space-between;  /* Garante que o botão fique no fundo */
-    height: 500px;  /* Definindo uma altura fixa para os produtos */
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
 }
 
-/* Ajuste da imagem */
 .product-img {
+    /* Estilo da imagem do produto, com largura total e bordas arredondadas */
     width: 100%;
-    height: 200px;  /* Definindo uma altura para a imagem */
-    object-fit: cover;  /* Garantir que a imagem ocupe o espaço sem distorcer */
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
-/* Ajuste do título */
 .product-title {
+    /* Estilo do título do produto, com fonte grande e cor escura */
     font-size: 18px;
     font-weight: bold;
     color: #333;
     margin: 10px 0;
-    
 }
 
-/* Ajuste da descrição para caber na div */
 .product-description {
+    /* Estilo da descrição do produto, com limite de altura e texto truncado se necessário */
     font-size: 14px;
     color: #666;
     margin: 10px 0;
     line-height: 1.5;
     overflow: hidden;
-    height: 60px;  /* Limita a altura da descrição */
+    height: 60px;
     text-overflow: ellipsis;
 }
 
-/* Botão de compra */
 .product-button {
+    /* Estilo do botão do produto, com cor de fundo azul e bordas arredondadas */
     background-color: #007BFF;
     color: white;
     border: none;
@@ -192,22 +200,24 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: auto;  /* Coloca o botão no fundo da div */
+    margin-top: auto;
 }
 
 .product-button:hover {
+    /* Efeito de mudança de cor ao passar o mouse sobre o botão */
     background-color: #0056b3;
 }
-/* layout 1*/
+
 .product-grid {
+    /* Estilo do grid de produtos, com colunas ajustáveis e espaçamento entre os itens */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
 }
 
-
 .product {
+    /* Estilo de cada produto, com transição de escala e sombra ao passar o mouse */
     width: 100%;
     padding: 20px;
     background-color: #f9f9f9;
@@ -218,13 +228,13 @@
 }
 
 .product:hover {
+    /* Efeito de transformação (escala) e sombra ao passar o mouse */
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-
-/* layout 2*/
 .carousel {
+    /* Estilo do carrossel de produtos, com rolagem horizontal */
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -233,6 +243,7 @@
 }
 
 .product {
+    /* Estilo do produto no carrossel, com rolagem obrigatória e tamanho fixo */
     flex: 0 0 300px;
     scroll-snap-align: center;
     background-color: #f9f9f9;
@@ -243,8 +254,8 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* layout 3*/
 .product-list {
+    /* Estilo da lista de produtos, com disposição em coluna */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -252,6 +263,7 @@
 }
 
 .product {
+    /* Estilo de cada produto na lista, com flexbox para alinhar os itens */
     display: flex;
     align-items: center;
     gap: 20px;
@@ -263,6 +275,7 @@
 }
 
 .product img {
+    /* Estilo da imagem do produto na lista, com largura fixa */
     width: 100px;
     height: auto;
     border-radius: 10px;

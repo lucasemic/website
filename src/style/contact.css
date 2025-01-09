@@ -1,59 +1,73 @@
-
 .contact-container {
+    /* Define a largura total do container e aplica um fundo branco */
     width: 100%;
     background-color: #ffffff;
+
+    /* Adiciona sombra para dar profundidade e bordas arredondadas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+
+    /* Espaçamento interno e margens superiores/inferiores */
     padding: 20px;
     margin-bottom: 40px;
     margin-top: 40px;
 }
 
-/* Header com logo e informações de contato */
 .header {
+    /* Alinha os itens no eixo principal e ajusta o espaçamento entre eles */
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
 .logo {
+    /* Define a largura da imagem do logotipo e mantém proporção */
     width: 520px;
     height: auto;
+
+    /* Bordas arredondadas para o logotipo */
     border-radius: 8px;
 }
 
 .contact-info {
+    /* Configura layout em coluna com espaçamento vertical */
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 100px;
+
+    /* Define um tamanho de fonte grande */
     font-size: xx-large;
 }
 
 .contact-item {
+    /* Alinha os itens horizontalmente com um pequeno espaçamento */
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
 .contact-item i {
+    /* Ajusta o tamanho dos ícones e define a cor primária */
     font-size: 20px;
     color: #007BFF;
 }
 
-/* Responsividade */
 @media (max-width: 1020px) {
     .header {
+        /* Muda o layout para coluna e centraliza os itens */
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
     .logo {
+        /* Reduz a largura do logotipo em telas menores */
         width: 380px;
     }
 
     .contact-info {
+        /* Ajusta o espaçamento e reduz o tamanho da fonte em telas menores */
         display: flex;
         flex-direction: column;
         justify-content: center;
